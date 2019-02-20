@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+#root > div,
+div[data-reactroot] {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.img {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+.img {
+  width: 400px;
+  height: 400px;
+  padding: 0;
+  margin: 0;
+} */
+.img {
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img * {
+  position: relative;
+  z-index: 2;
+}
